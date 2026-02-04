@@ -42,9 +42,9 @@ Validation occurs:
 - Accessibility support with ARIA attributes
 
 ### 5. Password Show/Hide Feature
-- Toggle button/icon next to both password fields
+- Toggle button with "Show"/"Hide" text next to both password fields
 - Clicking the toggle switches between text and password input types
-- Visual icon changes (👁️/🙈) to indicate current state
+- Text changes between "Show" and "Hide" to indicate current state
 - Independent toggles for password and confirm password fields
 
 ### 6. Form Submission Behavior
@@ -115,8 +115,8 @@ project-folder/
 5. Correct the errors and watch them disappear automatically
 
 #### Password Toggle
-- Click the eye icon (👁️) next to the password fields to toggle visibility
-- The icon changes to (🙈) when password is visible
+- Click the "Show" button next to the password fields to toggle visibility
+- The button text changes to "Hide" when password is visible
 
 #### Dark/Light Mode
 - Click the theme toggle button in the top-right corner
@@ -201,11 +201,7 @@ project-folder/
 ## License
 This project is created for educational purposes.
 
-## Submission
-- Repository: [GitHub Repository Link]
-- Status: Ready for submission
-
 ---
 
-**Note**: Remember to add screenshots to the `screenshots/` folder and update the screenshot paths in this README before final submission.
+**Note**: This project uses only vanilla HTML, CSS, and JavaScript with no external libraries or frameworks as per assignment requirements.
 
