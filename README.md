@@ -198,9 +198,6 @@ project-folder/
 ## Author
 [Your Name]
 
-## License
-This project is created for educational purposes.
-
 ---
 
 **Note**: This project uses only vanilla HTML, CSS, and JavaScript with no external libraries or frameworks as per assignment requirements.
