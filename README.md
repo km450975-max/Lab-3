@@ -196,9 +196,8 @@ project-folder/
 - Add loading states for form submission
 
 ## Author
-[Your Name]
+Created as part of Web Development Lab Assignment
 
----
 
-**Note**: This project uses only vanilla HTML, CSS, and JavaScript with no external libraries or frameworks as per assignment requirements.
+**Note**: This project is created for educational purposes.
 
