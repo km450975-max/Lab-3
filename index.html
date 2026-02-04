@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Product Card & User Registration Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Banner -->
+    <header class="header-banner">
+        <div class="banner-content">
+            <h1 class="banner-title">Interactive Web Components</h1>
+        </div>
+        <div class="banner-bottom"></div>
+    </header>
+
+    <div class="container">
+        <!-- Theme Toggle Button -->
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+            <span class="theme-icon">🌙</span>
+        </button>
+
+        <!-- Product Card Section -->
+        <section class="product-section">
+            <h1>Product Card</h1>
+            <div class="product-card">
+                <div class="product-image-container">
+                    <div class="product-badge">Premium</div>
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&h=600&fit=crop&q=80" 
+                         alt="Premium Wireless Headphones" 
+                         id="productImage"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="image-placeholder" style="display: none;">
+                        <p>Image not available</p>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-title">Premium Wireless Headphones</h2>
+                    <p class="product-description">
+                        Experience crystal-clear sound quality with our premium wireless headphones. 
+                        Featuring noise cancellation, 30-hour battery life, and comfortable over-ear design.
+                    </p>
+                    <div class="product-price-container">
+                        <span class="product-price">$199.99</span>
+                        <span class="product-price-original">$249.99</span>
+                    </div>
+                    <div class="product-features">
+                        <span class="feature-tag">🎧 Noise Cancelling</span>
+                        <span class="feature-tag">🔋 30h Battery</span>
+                        <span class="feature-tag">📶 Wireless</span>
+                    </div>
+                    <button id="addToCartBtn" class="add-to-cart-btn">
+                        <span class="btn-text">Add to Cart</span>
+                        <span class="btn-icon">🛒</span>
+                    </button>
+                    <div id="cartMessage" class="cart-message" role="alert"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- User Registration Form Section -->
+        <section class="form-section">
+            <h1>User Registration</h1>
+            <form id="registrationForm" novalidate>
+                <!-- Full Name Field -->
+                <div class="form-group">
+                    <label for="fullName">Full Name <span class="required">*</span></label>
+                    <input 
+                        type="text" 
+                        id="fullName" 
+                        name="fullName" 
+                        placeholder="Enter your full name"
+                        aria-describedby="fullNameError"
+                        aria-invalid="false">
+                    <span id="fullNameError" class="error-message" role="alert"></span>
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-group">
+                    <label for="email">Email Address <span class="required">*</span></label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="Enter your email address"
+                        aria-describedby="emailError"
+                        aria-invalid="false">
+                    <span id="emailError" class="error-message" role="alert"></span>
+                </div>
+
+                <!-- Password Field -->
+                <div class="form-group">
+                    <label for="password">Password <span class="required">*</span></label>
+                    <div class="password-input-container">
+                        <input 
+                            type="password" 
+                            id="password" 
+                            name="password" 
+                            placeholder="Enter your password (min. 8 characters)"
+                            aria-describedby="passwordError"
+                            aria-invalid="false">
+                        <button type="button" class="password-toggle" id="passwordToggle" aria-label="Toggle password visibility">
+                            <span class="toggle-text">Show</span>
+                        </button>
+                    </div>
+                    <span id="passwordError" class="error-message" role="alert"></span>
+                </div>
+
+                <!-- Confirm Password Field -->
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password <span class="required">*</span></label>
+                    <div class="password-input-container">
+                        <input 
+                            type="password" 
+                            id="confirmPassword" 
+                            name="confirmPassword" 
+                            placeholder="Confirm your password"
+                            aria-describedby="confirmPasswordError"
+                            aria-invalid="false">
+                        <button type="button" class="password-toggle" id="confirmPasswordToggle" aria-label="Toggle confirm password visibility">
+                            <span class="toggle-text">Show</span>
+                        </button>
+                    </div>
+                    <span id="confirmPasswordError" class="error-message" role="alert"></span>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">Register</button>
+                <div id="formSuccessMessage" class="success-message" role="alert"></div>
+            </form>
+        </section>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
